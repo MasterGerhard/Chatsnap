@@ -42,7 +42,6 @@
 		A6444E6718A2E9BE003DB70A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E5F18A2E9BD003DB70A /* MobileCoreServices.framework */; };
 		A6444E6818A2E9BE003DB70A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E6018A2E9BE003DB70A /* QuartzCore.framework */; };
 		A6444E6918A2E9BE003DB70A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E6118A2E9BE003DB70A /* Security.framework */; };
-		A6444E6A18A2E9BE003DB70A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E6218A2E9BE003DB70A /* StoreKit.framework */; };
 		A6444E6B18A2E9BE003DB70A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E6318A2E9BE003DB70A /* SystemConfiguration.framework */; };
 		A6444E6E18A2EBFB003DB70A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6444E6D18A2EBFB003DB70A /* LoginViewController.m */; };
 		A6444E7118A2EC1E003DB70A /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6444E7018A2EC1E003DB70A /* SignupViewController.m */; };
@@ -103,7 +102,6 @@
 		A6444E5F18A2E9BD003DB70A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A6444E6018A2E9BE003DB70A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A6444E6118A2E9BE003DB70A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		A6444E6218A2E9BE003DB70A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A6444E6318A2E9BE003DB70A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A6444E6C18A2EBFB003DB70A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
 		A6444E6D18A2EBFB003DB70A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				A6444E6718A2E9BE003DB70A /* MobileCoreServices.framework in Frameworks */,
 				A6444E6818A2E9BE003DB70A /* QuartzCore.framework in Frameworks */,
 				A6444E6918A2E9BE003DB70A /* Security.framework in Frameworks */,
-				A6444E6A18A2E9BE003DB70A /* StoreKit.framework in Frameworks */,
 				A6444E6B18A2E9BE003DB70A /* SystemConfiguration.framework in Frameworks */,
 				A6444E1A18A2D2EF003DB70A /* CoreGraphics.framework in Frameworks */,
 				A6444E5B18A2E96D003DB70A /* AudioToolbox.framework in Frameworks */,
@@ -181,7 +178,6 @@
 				A6444E5F18A2E9BD003DB70A /* MobileCoreServices.framework */,
 				A6444E6018A2E9BE003DB70A /* QuartzCore.framework */,
 				A6444E6118A2E9BE003DB70A /* Security.framework */,
-				A6444E6218A2E9BE003DB70A /* StoreKit.framework */,
 				A6444E6318A2E9BE003DB70A /* SystemConfiguration.framework */,
 				A6444E5A18A2E96D003DB70A /* AudioToolbox.framework */,
 				A6444E5818A2E909003DB70A /* Parse.framework */,
@@ -315,6 +311,11 @@
 				TargetAttributes = {
 					A6444E1318A2D2EF003DB70A = {
 						DevelopmentTeam = 843R8SK4WN;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					A6444E2E18A2D2EF003DB70A = {
 						TestTargetID = A6444E1318A2D2EF003DB70A;
@@ -503,8 +504,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Steven Gerhard (8FXFW2K8L8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steven Gerhard (8FXFW2K8L8)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/SteveG/Documents/Xcode/SGRibbit,
@@ -512,8 +513,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGRibbit/Chatsnap-Prefix.pch";
 				INFOPLIST_FILE = "SGRibbit/Chatsnap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = Chatsnap;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "51E568C0-9861-40A9-B847-3775FF17EFB3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -523,8 +525,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Steven Gerhard (8FXFW2K8L8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steven Gerhard (8FXFW2K8L8)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/SteveG/Documents/Xcode/SGRibbit,
@@ -532,8 +534,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGRibbit/Chatsnap-Prefix.pch";
 				INFOPLIST_FILE = "SGRibbit/Chatsnap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = Chatsnap;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "51E568C0-9861-40A9-B847-3775FF17EFB3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
