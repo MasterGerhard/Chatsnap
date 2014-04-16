@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9D65CE20-F8CD-4C4B-A98C-CCE187B24F0C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Chatsnap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7EB48E9E-5D83-4EE5-ACF9-91872BED9873</key>
+		<string>https://github.com/MasterGerhard/Chatsnap.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Chatsnap.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7EB48E9E-5D83-4EE5-ACF9-91872BED9873</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MasterGerhard/Chatsnap.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7EB48E9E-5D83-4EE5-ACF9-91872BED9873</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7EB48E9E-5D83-4EE5-ACF9-91872BED9873</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SGRibbit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
