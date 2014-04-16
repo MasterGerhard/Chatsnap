@@ -37,6 +37,7 @@
             [self.tableView reloadData];
         }
     }];
+    
     if (self.image == nil && [self.videoFilePath length] == 0) {
         self.imagePicker = [[UIImagePickerController alloc] init];
         self.imagePicker.delegate = self;
@@ -107,12 +108,6 @@
 
 #pragma mark - ImagePickerControllerDelegate
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    [self dismissViewControllerAnimated:NO completion:nil];
-    [self.tabBarController setSelectedIndex:0];
-}
-
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
     if ([mediaType isEqualToString:(NSString*)kUTTypeImage]) {
@@ -135,6 +130,12 @@
     }
     [self dismissViewControllerAnimated:YES completion:nil];
 
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:NO completion:nil];
+    [self.tabBarController setSelectedIndex:0];
 }
 #pragma mark - IBActions
 
