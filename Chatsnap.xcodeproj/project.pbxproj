@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A601F62518FE6222004BA142 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A601F62418FE6222004BA142 /* Parse.framework */; };
 		A60E313818A6C9400016912C /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E313718A6C9400016912C /* CameraViewController.m */; };
 		A60E313D18A706B70016912C /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = A60E313918A706B70016912C /* icon_image.png */; };
 		A60E313E18A706B70016912C /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A60E313A18A706B70016912C /* icon_image@2x.png */; };
@@ -34,7 +35,6 @@
 		A6444E5218A2D6AB003DB70A /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = A6444E4E18A2D6AB003DB70A /* friends.png */; };
 		A6444E5318A2D6AB003DB70A /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6444E4F18A2D6AB003DB70A /* friends@2x.png */; };
 		A6444E5718A2DF48003DB70A /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6444E5618A2DF48003DB70A /* InboxViewController.m */; };
-		A6444E5918A2E909003DB70A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E5818A2E909003DB70A /* Parse.framework */; };
 		A6444E5B18A2E96D003DB70A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E5A18A2E96D003DB70A /* AudioToolbox.framework */; };
 		A6444E6418A2E9BE003DB70A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E5C18A2E9BD003DB70A /* CFNetwork.framework */; };
 		A6444E6518A2E9BE003DB70A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6444E5D18A2E9BD003DB70A /* CoreLocation.framework */; };
@@ -60,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A601F62418FE6222004BA142 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A60E313618A6C9400016912C /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		A60E313718A6C9400016912C /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
 		A60E313918A706B70016912C /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
@@ -94,7 +95,6 @@
 		A6444E4F18A2D6AB003DB70A /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
 		A6444E5518A2DF48003DB70A /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InboxViewController.h; path = ../InboxViewController.h; sourceTree = "<group>"; };
 		A6444E5618A2DF48003DB70A /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InboxViewController.m; path = ../InboxViewController.m; sourceTree = "<group>"; };
-		A6444E5818A2E909003DB70A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A6444E5A18A2E96D003DB70A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A6444E5C18A2E9BD003DB70A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A6444E5D18A2E9BD003DB70A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -124,12 +124,12 @@
 				A6444E6618A2E9BE003DB70A /* libz.1.1.3.dylib in Frameworks */,
 				A6444E6718A2E9BE003DB70A /* MobileCoreServices.framework in Frameworks */,
 				A6444E6818A2E9BE003DB70A /* QuartzCore.framework in Frameworks */,
+				A601F62518FE6222004BA142 /* Parse.framework in Frameworks */,
 				A6444E6918A2E9BE003DB70A /* Security.framework in Frameworks */,
 				A6444E6B18A2E9BE003DB70A /* SystemConfiguration.framework in Frameworks */,
 				A6444E1A18A2D2EF003DB70A /* CoreGraphics.framework in Frameworks */,
 				A6444E5B18A2E96D003DB70A /* AudioToolbox.framework in Frameworks */,
 				A6444E1C18A2D2EF003DB70A /* UIKit.framework in Frameworks */,
-				A6444E5918A2E909003DB70A /* Parse.framework in Frameworks */,
 				A6444E1818A2D2EF003DB70A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +171,7 @@
 		A6444E1618A2D2EF003DB70A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A601F62418FE6222004BA142 /* Parse.framework */,
 				A6383E2318ADCB2400487F54 /* MediaPlayer.framework */,
 				A6444E5C18A2E9BD003DB70A /* CFNetwork.framework */,
 				A6444E5D18A2E9BD003DB70A /* CoreLocation.framework */,
@@ -180,7 +181,6 @@
 				A6444E6118A2E9BE003DB70A /* Security.framework */,
 				A6444E6318A2E9BE003DB70A /* SystemConfiguration.framework */,
 				A6444E5A18A2E96D003DB70A /* AudioToolbox.framework */,
-				A6444E5818A2E909003DB70A /* Parse.framework */,
 				A6444E1718A2D2EF003DB70A /* Foundation.framework */,
 				A6444E1918A2D2EF003DB70A /* CoreGraphics.framework */,
 				A6444E1B18A2D2EF003DB70A /* UIKit.framework */,
@@ -509,6 +509,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/SteveG/Documents/Xcode/SGRibbit,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGRibbit/Chatsnap-Prefix.pch";
@@ -530,6 +531,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/SteveG/Documents/Xcode/SGRibbit,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGRibbit/Chatsnap-Prefix.pch";
